@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    display: inline-flex;
+    padding: 239px 542px 319px 542px;
+    align-items: flex-start;
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+}
+/*screen1*/
+main {
+    display: flex;
+    width: 428px;
+    padding: 48px 64px 64px 64px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80);
+}
+ h1 {
+    color: #34355B;
+    text-align: center;
+    font-family: Montserrat sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+button{
+    cursor: pointer;
+}
+p {
+    margin-top: 1.4rem;
+    color: #34355B;
+    text-align: center;
+    font-family: "DM Sans" sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+
+    font-weight: 400;
+    line-height: normal;
+}
+button {
+    background: none;
+    border: none;
+    margin-top: 2.5rem;
+    width: 248px;
+    height: 192px;
+    flex-shrink: 0;
+}
+/*screen2*/
+.screen2 {
+    flex-direction: column;
+    gap: 4rem;
+}
+.screen2 p {
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+}
+.screen2 img {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 43px 0px 42px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.screen2 button {
+    width: 174px;
+    height: 50px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 6rem;
+    color: white;
+    border-radius: 4px;
+    background-color: #FF9500;
+    border: none;
+}
+
+.screen1 img:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+.paragrafo {
+    transition: all 1.5s ease-in;
+    transform: translateY(150px) scale(0);
+
+}
+.animation-top {
+    transform: translateY(0px) scale(1);
+}
